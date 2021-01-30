@@ -22,12 +22,12 @@ export const Usuario = () => {
     }
 
     return (
-        <div className="mt-5">
-            <h3>Usuario: useState</h3>
+        <div className="mt-2">
+            <h3>Usuario:</h3>
             <button onClick={ login } className="btn btn-outline-primary">Login</button>
             {
-                (!user)?<pre>No hay usuario</pre>
-                    : <pre> { JSON.stringify( user ) } </pre>
+                (!user)?<pre className="mt-2">No hay usuario</pre>
+                    : <pre className="mt-2"> { JSON.stringify( user ) } </pre>
             }
             
         </div>
